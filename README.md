@@ -1,6 +1,7 @@
 # TuneUp
+
 <p align="center">
-<img height=400 src="https://www.stephane-pacheco-fernandes.com/assets/images/work1/w01.png">
+<img height=300 src="https://i.ibb.co/cQVk9Sd/logo-tune-Up.gif">
 </p>
 
 Tune Up is a dating website based on musical tastes. The project was realized within the context of the [Software Architecture](https://hecnet.unil.ch/hec/syllabus/descriptif/2458?dyn_lang=fr) course given by [prof. Benoît Garbinato](https://hecnet.unil.ch/hec/recherche/fiche?pnom=bgarbinato&dyn_lang=fr). To carry out this project I used technologies such as Java, XML, MySql or JakartaEE. TuneUp has an MVC architecture (model/view/controller).
@@ -18,7 +19,9 @@ For the [third phase](https://github.com/stefarine/TuneUp/tree/master/TuneUp-v3)
 Finally, in the [fourth phase](https://github.com/stefarine/TuneUp/tree/master/TuneUp-v4), for the needs of the course, I implement a restful api. The project is divided in two parts, a [client](https://github.com/stefarine/TuneUp/tree/master/TuneUp-v4/TuneUp-RestfulClient) and a [server](https://github.com/stefarine/TuneUp/tree/master/TuneUp-v4/hec.soar_TuneUp-RestfulService_war_1.0-SNAPSHOT). The client makes requests to the server to get or modify information in the database. 
 
 
-
+<p align="center">
+<img height=300 src="https://www.stephane-pacheco-fernandes.com/assets/images/work1/w01.png">
+</p>
 <p align="center">
 <img height=300 src="https://www.stephane-pacheco-fernandes.com/assets/images/work1/w02.png">
 </p>
