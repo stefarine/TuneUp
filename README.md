@@ -12,4 +12,6 @@ During the [second phase](https://github.com/stefarine/TuneUp/tree/master/TuneUp
 
 For the [third phase](https://github.com/stefarine/TuneUp/tree/master/TuneUp-v3), I create persistence by linking my program to a MySql database. At this stage, the application is fully functional. 
 
-Finally, in [phase 4](https://github.com/stefarine/TuneUp/tree/master/TuneUp-v4), for the needs of the course, I implement a restful api. The project is divided in two parts, a [client](https://github.com/stefarine/TuneUp/tree/master/TuneUp-v4/TuneUp-RestfulClient) and a [server](https://github.com/stefarine/TuneUp/tree/master/TuneUp-v4/hec.soar_TuneUp-RestfulService_war_1.0-SNAPSHOT). The client makes requests to the server to get or modify information in the database. 
+Finally, in the [fourth phase](https://github.com/stefarine/TuneUp/tree/master/TuneUp-v4), for the needs of the course, I implement a restful api. The project is divided in two parts, a [client](https://github.com/stefarine/TuneUp/tree/master/TuneUp-v4/TuneUp-RestfulClient) and a [server](https://github.com/stefarine/TuneUp/tree/master/TuneUp-v4/hec.soar_TuneUp-RestfulService_war_1.0-SNAPSHOT). The client makes requests to the server to get or modify information in the database. 
+
+https://www.stephane-pacheco-fernandes.com/assets/images/work1/w01.png
