@@ -8,3 +8,8 @@ The project is divided into 4 phases. In the [first phase](https://github.com/st
 <img height=500 src="https://user-images.githubusercontent.com/57952280/210099088-5cb3cb60-3bf9-4680-878a-7ee5d94f8ad4.png">
 </p>
 
+During the [second phase](https://github.com/stefarine/TuneUp/tree/master/TuneUp-v2), I implemented the web views of the application. At this stage, visually the application is finished but the database is not persistent. I simply use a Java test class to simulate my database. 
+
+For the [third phase](https://github.com/stefarine/TuneUp/tree/master/TuneUp-v3), I create persistence by linking my program to a MySql database. At this stage, the application is fully functional. 
+
+Finally, in [phase 4](https://github.com/stefarine/TuneUp/tree/master/TuneUp-v4), for the needs of the course, I implement a restful api. The project is divided in two parts, a [client](https://github.com/stefarine/TuneUp/tree/master/TuneUp-v4/TuneUp-RestfulClient) and a [server](https://github.com/stefarine/TuneUp/tree/master/TuneUp-v4/hec.soar_TuneUp-RestfulService_war_1.0-SNAPSHOT). The client makes requests to the server to get or modify information in the database. 
