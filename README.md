@@ -1,7 +1,7 @@
 # TuneUp
 
 <p align="center">
-<img height=300 src="https://i.ibb.co/cQVk9Sd/logo-tune-Up.gif">
+<img height=100 src="https://i.ibb.co/cQVk9Sd/logo-tune-Up.gif">
 </p>
 
 Tune Up is a dating website based on musical tastes. The project was realized within the context of the [Software Architecture](https://hecnet.unil.ch/hec/syllabus/descriptif/2458?dyn_lang=fr) course given by [prof. Benoît Garbinato](https://hecnet.unil.ch/hec/recherche/fiche?pnom=bgarbinato&dyn_lang=fr). To carry out this project I used technologies such as Java, XML, MySql or JakartaEE. TuneUp has an MVC architecture (model/view/controller).
