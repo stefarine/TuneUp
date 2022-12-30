@@ -19,3 +19,7 @@ Finally, in the [fourth phase](https://github.com/stefarine/TuneUp/tree/master/T
 
 
 
+<p align="center">
+<img height=300 src="https://www.stephane-pacheco-fernandes.com/assets/images/work1/w02.png">
+</p>
+
