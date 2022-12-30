@@ -14,4 +14,7 @@ For the [third phase](https://github.com/stefarine/TuneUp/tree/master/TuneUp-v3)
 
 Finally, in the [fourth phase](https://github.com/stefarine/TuneUp/tree/master/TuneUp-v4), for the needs of the course, I implement a restful api. The project is divided in two parts, a [client](https://github.com/stefarine/TuneUp/tree/master/TuneUp-v4/TuneUp-RestfulClient) and a [server](https://github.com/stefarine/TuneUp/tree/master/TuneUp-v4/hec.soar_TuneUp-RestfulService_war_1.0-SNAPSHOT). The client makes requests to the server to get or modify information in the database. 
 
-https://www.stephane-pacheco-fernandes.com/assets/images/work1/w01.png
+
+<p align="center">
+<img height=500 src="https://www.stephane-pacheco-fernandes.com/assets/images/work1/w01.png">
+</p>
