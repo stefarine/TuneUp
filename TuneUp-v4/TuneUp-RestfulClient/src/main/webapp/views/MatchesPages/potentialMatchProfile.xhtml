@@ -1,0 +1,67 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:a="http://xmlns.jcp.org/jsf/passthrough"
+      xmlns:c="http://xmlns.jcp.org/jsp/jstl/core">
+    
+    <h:head>
+        <title>Tune Up</title>
+        <style>
+             body{
+                background-color: black;
+                font-family: sans-serif;
+                color: white;
+            }
+            .column-lv1{
+                display: flex;
+                flex-direction: column;
+            }
+            
+            .row-lv2{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+            }
+            
+            .profilePic{
+                height: 200pt;
+                border-radius: 10px;
+            }
+            
+            .description{
+                width: 290pt;
+            }
+            a:link, a:visited{
+                color: #f81056;
+            }
+        </style>
+    </h:head>
+    <h:body>
+        <div class="column-lv1">
+            <div class="row-lv2">
+                <div class="item">
+                    <a href="#{request.contextPath}/faces/views/MatchesPages/searchNewMatches.xhtml?faces-redirect=true"><img class="logo" alt="logoTuneUp" src="https://i.ibb.co/cQVk9Sd/logo-tune-Up.gif"/></a>
+                </div>   
+            </div>  
+        </div> <br/>
+
+        <div class="column-lv1">
+            <div class="row-lv2">
+                <p>#{param['matchName']} - #{param['age']} Years old</p>
+            </div>
+            <div class="row-lv2">
+                <img class="profilePic" src="#{param['picture_url']}" alt="profilePic"/>
+            </div>
+            <div  class="row-lv2">
+                <p class="description">#{param['description']}</p>
+            </div>
+
+            <br/><br/><br/>
+        </div>
+
+    </h:body>
+</html>
+

@@ -1,0 +1,55 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://java.sun.com/jsf/core">
+    <h:head>
+        <title>Tune Up</title>
+        
+        <style>
+            body{
+                background-color: black;    
+                font-family: sans-serif;
+            }
+            
+            .column-lv1{
+                display: flex;
+                flex-direction: column;
+            }
+            
+            .row-lv2{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+            }
+
+        </style>
+    </h:head>
+    <h:body>
+        <div class="column-lv1">
+            <div class="row-lv2">
+                <div class="item">
+                    <img class="logo" alt="logoTuneUp" src="https://i.ibb.co/cQVk9Sd/logo-tune-Up.gif"/>
+                </div>   
+                
+            </div>  
+            <div class="row-lv2">
+                <div class="item">
+                    <br/><br/><br/><br/><br/><br/>
+                    <p:button value="Log In"  style="margin-right:20px;" outcome="/views/connexion/login.xhtml?faces-redirect=true">
+                        <f:param name="productId" value="10"/>
+                    </p:button>
+                </div>
+                <div class="item">
+                        <br/><br/><br/><br/><br/><br/>
+                        <p:button value="Sign Up"  style="margin-right:20px;" outcome="/views/connexion/newAccount.xhtml?faces-redirect=true">
+                            <f:param name="productId" value="10"/>
+                        </p:button>
+                </div>    
+            </div>
+        </div>
+        
+    </h:body>
+</html>
+

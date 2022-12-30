@@ -1,0 +1,81 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui"
+      xmlns:f="http://java.sun.com/jsf/core"
+      xmlns:a="http://xmlns.jcp.org/jsf/passthrough"
+      xmlns:c="http://xmlns.jcp.org/jsp/jstl/core">
+    
+    <h:head>
+        <title>Tune Up</title>
+        <style>
+             body{
+                background-color: black;
+                font-family: sans-serif;
+                color: white;
+            }
+            .column-lv1{
+                display: flex;
+                flex-direction: column;
+            }
+            
+            .row-lv2{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+            }
+            
+            .form__input {
+                font-family: sans-serif;
+                letter-spacing: 4px;
+                color: #f81059;
+                font-size: 1.2rem;
+                margin: 0 auto;
+                padding: 0.7rem 4rem;
+                border-radius: 0.2rem;
+                background-color: rgb(255, 255, 255);
+                border: none;
+                width: 60%;
+                display: block;
+                border-bottom: 0.3rem solid transparent;
+                transition: all 0.3s;
+                text-align: center;
+            }
+            
+            .trackImg{
+                width: 100pt;
+                border-radius: 50%;
+            }
+        </style>
+    </h:head>
+    <h:body>
+        <div class="column-lv1">
+            <div class="row-lv2">
+                <div class="item">
+                    <a href="#{request.contextPath}/faces/views/MainMenu/userHomePage.xhtml?faces-redirect=true"><img class="logo" alt="logoTuneUp" src="https://i.ibb.co/cQVk9Sd/logo-tune-Up.gif"/></a>
+                </div>   
+            </div>  
+        </div> <br/>
+
+        <h:form id="form">
+            <p:dataGrid var="track" value="#{artistBean.getTracksByArtist(searchBean.search)}" columns="3" layout="grid" emptyMessage="No more tracks available for this artist. Click on the logo above to return to the menu.">
+                        <p:panel header="#{track.name}" style="text-align:center;">
+                            <h:panelGrid columns="1" style="width:100%">
+                                <img src="#{track.picture}" class="trackImg"  ></img> 
+                                <audio controls="x">
+                                    <source src="#{track.preview}" type="audio/wav" />
+                                </audio><br/>
+                                
+                                <p:growl id="message" showDetail="true" />
+                                <p:commandButton value="Add to playlist" id="add" action="#{playlistBean.addTrackToPlaylist(track)}" style="margin-right:20px;" update=":form:"/>
+                            </h:panelGrid>
+                        </p:panel>
+                    </p:dataGrid>
+   
+                </h:form>
+
+
+    </h:body>
+</html>
+

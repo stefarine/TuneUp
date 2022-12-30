@@ -1,0 +1,68 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"
+      xmlns:h="http://xmlns.jcp.org/jsf/html"
+      xmlns:p="http://primefaces.org/ui">
+    <h:head>
+        <title>Tune Up</title>
+        <style>
+             body{
+                background-color: black;
+                font-family: sans-serif;
+                color: white;
+            }
+            .column-lv1{
+                display: flex;
+                flex-direction: column;
+            }
+            
+            .row-lv2{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+            }
+            
+            .trackImg{
+                width: 100pt;
+                border-radius: 50%;
+            }
+            
+            a{
+                text-decoration: none;
+                
+            }
+        </style>
+    </h:head>
+    <h:body>
+        <div class="column-lv1">
+            <div class="row-lv2">
+                <div class="item">
+                    <a href="#{request.contextPath}/faces/views/MainMenu/userHomePage.xhtml?faces-redirect=true"><img class="logo" alt="logoTuneUp" src="https://i.ibb.co/cQVk9Sd/logo-tune-Up.gif"/></a>
+                </div>   
+            </div>  
+        </div> <br/>
+        
+        <h:form id="form2">
+            <p:dataGrid var="user" value="#{matchesBean.potentialMatchUsers}" columns="3" layout="grid" emptyMessage="no more users">
+                <a href='#{request.contextPath}/faces/views/MatchesPages/potentialMatchProfile.xhtml?faces-redirect=true&amp;matchName=#{user.firstName}&amp;age=#{user.calculateAge()}&amp;description=#{user.personalDescription}&amp;picture_url=#{user.picture}' target="_blank">
+                            <p:panel header="#{user.firstName}" style="text-align:center;">
+                                <h:panelGrid columns="1" style="width:100%">
+                                    <img src="#{user.picture}" class="trackImg"  ></img> 
+                                    <p>#{user.calculateAge()} YO </p>
+
+
+                                    <p:growl id="message" showDetail="true" />
+                                    <p:commandButton icon="pi pi-heart" action="#{matchesBean.addUserToMatchesList(user)}" update=":form2">
+                                    </p:commandButton>
+
+                                </h:panelGrid>
+                            </p:panel>
+                        </a>
+                    </p:dataGrid>
+                    
+
+                    
+                </h:form>
+    </h:body>
+</html>
+
