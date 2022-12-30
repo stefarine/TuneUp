@@ -6,6 +6,6 @@ The project is divided into 4 phases. In the first phase, I imagined the applica
 ![diagrammes_classes]()
 
 <p align="center">
-<img height=200 src="https://user-images.githubusercontent.com/57952280/210099088-5cb3cb60-3bf9-4680-878a-7ee5d94f8ad4.png">
+<img height=500 src="https://user-images.githubusercontent.com/57952280/210099088-5cb3cb60-3bf9-4680-878a-7ee5d94f8ad4.png">
 </p>
 
